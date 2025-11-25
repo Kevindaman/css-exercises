@@ -4,10 +4,41 @@ body {
   min-height: 100vh;
 }
 
+h1{
+  margin: 0;
+}
+
+.flex-row{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.center{
+  align-items: center;
+  justify-content: center;
+}
+
+.main-flex{
+  min-height: 100vh;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  padding: 0 20px;
+}
+
+.content{
+  flex-grow: 1;
 }
 
 .footer {
@@ -20,10 +51,37 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex: 0 0 300px;
+  padding-left: 30px;
 }
 
 .card {
+  padding: 20px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  
+}
+
+.cards{
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  margin-bottom: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
